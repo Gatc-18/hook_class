@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ApiFetch from './components/apiFetch';
 import 'antd/dist/antd.css';
+import CategoriesApp from './components/GiftExpertApp/categoriesApp';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ApiFetch/>
+    <CategoriesApp/>
   </React.StrictMode>
 );
 
