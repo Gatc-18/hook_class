@@ -31,9 +31,12 @@ const UseEffectHook = () => {
     }, [count])
 
 
-    useEffect(() => {
-        console.log("Se actualizó el estado de name");
-    }, [name])
+
+        useEffect(() => {
+            console.log("Se actualizó el estado de name");
+        }, [name])
+    
+   
 
 
 
