@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import UseEffectHook from './components/useEffect';
-import UseStateHook from './components/useState';
+import ApiFetch from './components/apiFetch';
+import 'antd/dist/antd.css';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseStateHook/>
+    <ApiFetch/>
   </React.StrictMode>
 );
 
