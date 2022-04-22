@@ -9,19 +9,29 @@ const ApiFetch = () => {
     const url = "https://rickandmortyapi.com/api/character";
     const [state, setState] = useState({
         loading: true,
-        data: []
+        data: [],
+        name:"Gustavo",
+        lastName:"Tovar"
     })
 
-    const { loading, data } = state;
+    const { loading, data, name, lastName  } = state;
 
     const getDataApi = async () => {
         let response = await getData(url);
 
         setState({
+            ...state,
             loading: false,
-            data: response
+            data: response,
+            age:20
         })
+
+        console.log(state)
     }
+
+
+    
+
 
     useEffect(() => {
         getDataApi();
